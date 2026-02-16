@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+
+    /* 🔥 BACKGROUND IMAGE */
+    background-image:
+      linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+      url("Images/Gym.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    animation: bgGlow 6s infinite alternate;
+}
+
+/* Background glow animation */
+@keyframes bgGlow {
+    0% { background-color: rgba(0,0,0,0.7); }
+    100% { background-color: rgba(5,5,5,0.7); }
+}
+
+.container {
+    width: 360px;
+    padding: 25px;
+    border-radius: 15px;
+    background: #000;
+    animation: neonPulse 2s infinite alternate;
+}
+
+/* Neon aqua + green glow animation */
+@keyframes neonPulse {
+    from {
+        box-shadow:
+          0 0 15px #00ffff,
+          0 0 30px #00ff99;
+    }
+    to {
+        box-shadow:
+          0 0 30px #00ffff,
+          0 0 60px #00ff99;
+    }
+}
+
+h2 {
+    text-align: center;
+    color: #00ffff;
+    text-shadow: 0 0 10px #00ffff;
+}
+
+label {
+    color: #ffffff;
+    margin-top: 10px;
+    display: block;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    background: black;
+    border: 2px solid #00ffff;
+    border-radius: 8px;
+    color: white;
+    outline: none;
+    box-shadow: 0 0 10px #00ffff;
+}
+
+input:focus {
+    box-shadow: 0 0 20px #00ffff;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: black;
+    color: #00ffff;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid #00ffff;
+    box-shadow: 0 0 10px #00ffff;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #00ffff;
+    color: black;
+    box-shadow: 0 0 25px #00ffff;
+}
+
+p {
+    color: #ffffff;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
+    text-shadow: 0 0 8px #00ffff;
+}
